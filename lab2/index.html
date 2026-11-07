@@ -1,0 +1,1162 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../practice/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Лабораторная работа №2 - Веб-программирование — Забродин Максим, K3340</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no2" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Веб-программирование — Забродин Максим, K3340" class="md-header__button md-logo" aria-label="Веб-программирование — Забродин Максим, K3340" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Веб-программирование — Забродин Максим, K3340
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Лабораторная работа №2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Веб-программирование — Забродин Максим, K3340" class="md-nav__button md-logo" aria-label="Веб-программирование — Забродин Максим, K3340" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Веб-программирование — Забродин Максим, K3340
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практические работы
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Лабораторная работа №2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вариант 2 — Доска домашних заданий
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Используемые технологии
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Структура проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Модель данных
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Регистрация и вход
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Просмотр заданий
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Отправка ответа
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Разграничение прав
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выставление и просмотр оценок
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаблоны и оформление
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основные адреса
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Результат
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скриншоты
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Скриншоты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Список заданий, поиск и фильтрация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Регистрация ученика
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Отправка ответа
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создание задания преподавателем
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выставление оценки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Таблица оценок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пагинация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вариант 2 — Доска домашних заданий
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Используемые технологии
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Структура проекта
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Модель данных
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Регистрация и вход
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Просмотр заданий
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Отправка ответа
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Разграничение прав
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выставление и просмотр оценок
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Шаблоны и оформление
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Основные адреса
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Проверка работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Результат
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скриншоты
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Скриншоты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Список заданий, поиск и фильтрация
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Регистрация ученика
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Отправка ответа
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Создание задания преподавателем
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Выставление оценки
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Таблица оценок
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Пагинация
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="no2">Лабораторная работа №2</h1>
+<h2 id="_1">Цель работы</h2>
+<p>Освоить создание веб-приложения на Django: проектирование моделей данных, обработку запросов, использование шаблонов Jinja2, форм и базы данных PostgreSQL.</p>
+<h2 id="2">Вариант 2 — Доска домашних заданий</h2>
+<p>Реализован сайт, на котором ученики регистрируются, просматривают домашние задания, отправляют текстовые ответы и просматривают таблицу оценок.</p>
+<p>Преподаватель создаёт задания через интерфейс сайта и выставляет оценки через Django Admin.</p>
+<h2 id="_2">Используемые технологии</h2>
+<ul>
+<li>Python 3.14.6;</li>
+<li>Django 6.1.2;</li>
+<li>PostgreSQL 18;</li>
+<li>Psycopg;</li>
+<li>Jinja2;</li>
+<li>HTML и CSS;</li>
+<li>MkDocs для оформления отчёта.</li>
+</ul>
+<h2 id="_3">Структура проекта</h2>
+<pre><code class="language-text">labwork/
+├── board/
+│   ├── migrations/
+│   ├── admin.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── urls.py
+│   └── views.py
+├── homework_board/
+│   ├── settings.py
+│   ├── jinja2.py
+│   └── urls.py
+├── templates/
+│   ├── base.html
+│   ├── homework_list.html
+│   ├── homework_form.html
+│   ├── answer_form.html
+│   ├── grade_table.html
+│   ├── register.html
+│   └── login.html
+├── requirements.txt
+└── manage.py
+</code></pre>
+<h2 id="_4">Модель данных</h2>
+<p>Используется стандартная модель пользователя Django <code>User</code> и три модели приложения.</p>
+<table>
+<thead>
+<tr>
+<th>Модель</th>
+<th>Основные поля</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User</td>
+<td>username, first_name, last_name, password, is_staff</td>
+<td>Пользователи и их права</td>
+</tr>
+<tr>
+<td>Subject</td>
+<td>name</td>
+<td>Учебные предметы</td>
+</tr>
+<tr>
+<td>Homework</td>
+<td>subject, teacher, issued_at, deadline, text, fine</td>
+<td>Домашние задания</td>
+</tr>
+<tr>
+<td>Student_answer</td>
+<td>homework, student, text, submitted_at, grade</td>
+<td>Ответы учеников и оценки</td>
+</tr>
+</tbody>
+</table>
+<p>Каждая модель имеет автоматически созданный первичный ключ <code>id</code>.</p>
+<p>Связи между таблицами:</p>
+<ul>
+<li>один предмет связан со многими заданиями;</li>
+<li>один преподаватель может создать несколько заданий;</li>
+<li>одно задание может иметь ответы разных учеников;</li>
+<li>один ученик может ответить на несколько заданий.</li>
+</ul>
+<p>Внешние ключи связывают записи через их ID. Ограничение <code>unique_student_homework</code> запрещает создавать несколько ответов одного ученика на одно задание.</p>
+<p>Поле <code>grade</code> допускает оценки от 2 до 5 при проверке формы. До проверки ответа значение оценки отсутствует.</p>
+<p>При удалении преподавателя используется <code>PROTECT</code>: удалить его, пока существуют связанные задания, нельзя.</p>
+<p>Таблицы созданы в PostgreSQL командами:</p>
+<pre><code class="language-bash">python manage.py makemigrations
+python manage.py migrate
+</code></pre>
+<h2 id="_5">Регистрация и вход</h2>
+<p>Регистрация реализована формой на основе <code>UserCreationForm</code>. Она проверяет введённые данные и сохраняет хеш пароля.</p>
+<p>После регистрации пользователь автоматически входит на сайт. Для повторного входа и выхода используются стандартные <code>LoginView</code> и <code>LogoutView</code>.</p>
+<p>Выход выполняется POST-запросом. Формы, изменяющие данные, содержат CSRF-токен.</p>
+<h2 id="_6">Просмотр заданий</h2>
+<p>Главная страница показывает предмет, преподавателя, дату выдачи, срок сдачи, текст задания и информацию о штрафах.</p>
+<p>Получение заданий реализовано в обработчике <code>homework_list</code>. Для загрузки связанных предметов и преподавателей используется <code>select_related</code>.</p>
+<p>Добавлены:</p>
+<ul>
+<li>поиск по тексту задания и названию предмета;</li>
+<li>фильтрация по предмету;</li>
+<li>пагинация по пять заданий на странице.</li>
+</ul>
+<p>При переходе между страницами поисковый запрос и выбранный предмет сохраняются.</p>
+<h2 id="_7">Отправка ответа</h2>
+<p>Форма <code>AnswerForm</code> содержит только поле текста. Ученика и задание обработчик определяет на сервере.</p>
+<p>Поиск существующего ответа выполняется по текущему пользователю и выбранному заданию:</p>
+<pre><code class="language-python">answer = Student_answer.objects.filter(
+    homework=homework,
+    student=request.user,
+).first()
+</code></pre>
+<p>При сохранении назначаются связанные записи:</p>
+<pre><code class="language-python">answer = form.save(commit=False)
+answer.homework = homework
+answer.student = request.user
+answer.grade = None
+answer.save()
+</code></pre>
+<p>Ученик может повторно открыть и изменить свой ответ. При повторной отправке оценка сбрасывается, поскольку изменённая работа требует новой проверки.</p>
+<h2 id="_8">Разграничение прав</h2>
+<p>Для различения преподавателя и ученика используется поле <code>is_staff</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Гость</th>
+<th>Ученик</th>
+<th>Преподаватель</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Просматривать задания и искать их</td>
+<td>Да</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Просматривать таблицу оценок</td>
+<td>Нет</td>
+<td>Да</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Отправлять и изменять свой ответ</td>
+<td>Нет</td>
+<td>Да</td>
+<td>Нет</td>
+</tr>
+<tr>
+<td>Создавать задания</td>
+<td>Нет</td>
+<td>Нет</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Выставлять оценки через Django Admin</td>
+<td>Нет</td>
+<td>Нет</td>
+<td>Администратор с необходимыми правами</td>
+</tr>
+</tbody>
+</table>
+<p>Ограничения действуют на сервере. Например, обработчик создания задания проверяет роль:</p>
+<pre><code class="language-python">if not request.user.is_staff:
+    raise PermissionDenied(
+        &quot;Создавать задания может только учитель.&quot;
+    )
+</code></pre>
+<p>В шаблоне ссылка на создание задания показывается только преподавателю:</p>
+<pre><code class="language-html">{% if user.is_authenticated and user.is_staff %}
+    &lt;a href=&quot;{{ url('homework_create') }}&quot;&gt;Создать задание&lt;/a&gt;
+{% endif %}
+</code></pre>
+<h2 id="_9">Выставление и просмотр оценок</h2>
+<p>Администратор открывает ответ ученика в Django Admin, читает его текст и заполняет поле <code>grade</code>.</p>
+<p>На странице <code>/grades/</code> формируется таблица всех активных учеников: строки соответствуют ученикам, столбцы — заданиям. При отсутствии оценки выводится прочерк.</p>
+<h2 id="_10">Шаблоны и оформление</h2>
+<p>Страницы сайта используют Jinja2 и наследуют общий шаблон <code>base.html</code>.</p>
+<p>Общий шаблон содержит оформление: шрифт, отступы, карточки заданий, стили форм и таблиц. Для небольших экранов предусмотрено уменьшение внешних и внутренних отступов.</p>
+<p>Пример формы Jinja2:</p>
+<pre><code class="language-html">&lt;form method=&quot;post&quot;&gt;
+    {{ csrf_input }}
+    {{ form.as_p() }}
+    &lt;button type=&quot;submit&quot;&gt;Сохранить&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<h2 id="_11">Основные адреса</h2>
+<table>
+<thead>
+<tr>
+<th>Адрес</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>Список заданий, поиск и фильтрация</td>
+</tr>
+<tr>
+<td><code>/register/</code></td>
+<td>Регистрация ученика</td>
+</tr>
+<tr>
+<td><code>/login/</code></td>
+<td>Вход</td>
+</tr>
+<tr>
+<td><code>/logout/</code></td>
+<td>Выход через POST</td>
+</tr>
+<tr>
+<td><code>/homework/create/</code></td>
+<td>Создание задания преподавателем</td>
+</tr>
+<tr>
+<td><code>/homework/&lt;id&gt;/answer/</code></td>
+<td>Отправка и изменение собственного ответа</td>
+</tr>
+<tr>
+<td><code>/grades/</code></td>
+<td>Таблица оценок</td>
+</tr>
+<tr>
+<td><code>/admin/</code></td>
+<td>Панель администратора</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_12">Проверка работы</h2>
+<p>Вручную проверены регистрация, вход и выход, создание задания преподавателем, отправка и изменение ответа учеником, выставление оценки через админку и её отображение в таблице.</p>
+<p>Также проверены поиск, фильтрация, переключение страниц и запрет доступа ученика к созданию задания.</p>
+<h2 id="_13">Результат</h2>
+<p>Создана доска домашних заданий на Django с PostgreSQL и шаблонами Jinja2. Реализованы функции варианта, разграничение прав, поиск, фильтрация и пагинация.</p>
+<h2 id="_14">Скриншоты</h2>
+<h3 id="_15">Список заданий, поиск и фильтрация</h3>
+<p><img alt="Домашние задания" src="../images/homeworks.png" /></p>
+<h3 id="_16">Регистрация ученика</h3>
+<p><img alt="Регистрация" src="../images/register.png" /></p>
+<h3 id="_17">Отправка ответа</h3>
+<p><img alt="Ответ ученика" src="../images/answer.png" /></p>
+<h3 id="_18">Создание задания преподавателем</h3>
+<p><img alt="Создание задания" src="../images/teacher.png" /></p>
+<h3 id="_19">Выставление оценки</h3>
+<p><img alt="Оценка в Django Admin" src="../images/admin_grade.png" /></p>
+<h3 id="_20">Таблица оценок</h3>
+<p><img alt="Таблица оценок" src="../images/grades.png" /></p>
+<h3 id="_21">Пагинация</h3>
+<p><img alt="Переключение страниц" src="../images/pagination.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
